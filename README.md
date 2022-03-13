@@ -1,2 +1,2 @@
-# archive.github.io
+# archive
 테스트용
