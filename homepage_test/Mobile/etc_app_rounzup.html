@@ -107,7 +107,6 @@
 				<li><a href="./etc_story.html">안경원과의 상생</a></li>
 			</ul>
 		</article>
-		<h2>ROUNZ APP</h2>
 		<section class="app">
 			<div class="wrap_app">
 				<section class="section_top">
@@ -796,17 +795,13 @@
 <script>
 $(function() {
 
-	// 영상으로 리니어 시키니깐 너무 버벅임 
 	$(".section_2 .slide_video").slick({
 		arrows: false,
 		dots: true,
 		centerMode: true,
 		centerPadding: "30px",
         infinite:true,
-        autoplay: true,
-        // autoplaySpeed: 0,
-        // speed: 2000,
-		// cssEase: "linear"
+        autoplay: true
 	});
 
 	$(".section_3 .slide_coupon").slick({
@@ -817,7 +812,6 @@ $(function() {
         infinite:true,
         autoplay: true
 	});
-
 
 	let delayedYOffset = 0;
 	let rafId, rafState;
@@ -915,7 +909,7 @@ $(function() {
 
 	let sequence_up_fixed = new ScrollMagic.Scene({
 		triggerElement: ".up_1",
-		offset: 0,
+		offset: -56,
 		duration: 600
 	})
 	.addTo(controller)
@@ -1052,7 +1046,7 @@ $(function() {
 	//up_2
 	let setpin_up_2 = new ScrollMagic.Scene({
 		triggerElement: ".up_2",
-		offset: 0,
+		offset: -56,
 		duration: 800
 	})
 	.addTo(controller)
@@ -1073,7 +1067,7 @@ $(function() {
 	//up_3
 	let setpin_up_3 = new ScrollMagic.Scene({
 		triggerElement: ".up_3",
-		offset: 0,
+		offset: -56,
 		duration: 1200
 	})
 	.addTo(controller)
@@ -1095,7 +1089,7 @@ $(function() {
 	//up_4
 	let setpin_up_4 = new ScrollMagic.Scene({
 		triggerElement: ".up_4",
-		offset: 0,
+		offset: -56,
 		duration: 800
 	})
 	.addTo(controller)
@@ -1122,7 +1116,7 @@ $(function() {
 		duration: 1320
 	})
 	.addTo(controller)
-	// .addIndicators({"name": "section_2"})
+	.addIndicators({"name": "section_2"})
 	.setPin(".section_2");
 
 	let section_2_h2 = new ScrollMagic.Scene({
@@ -1130,12 +1124,13 @@ $(function() {
 		offset: 1000,
 		duration: 500
 	}).addTo(controller)
-	// .addIndicators({"name": "section_2_h2"})
+	.addIndicators({"name": "section_2_h2"})
 	.setTween(".section_2 .setpin_h2", {
 		background: "rgba(0,0,0,.85)",
 		top: 0,
 		opacity: 1
 	});
+
 
 	//slideup animation
 	function scrollSection() {

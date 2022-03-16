@@ -2170,14 +2170,7 @@ h3.excerpt em{color:#1729EC}
 .etc .app article[data-animation="true"] .action.a_7{transition-delay:1.4s}
 .etc .app article[data-animation="true"] .action.a_8{transition-delay:1.6s}
 
-/* slick */
-.etc .app .slick-slide{outline:none;-webkit-transform: translate3d(0,0,0);transform: translate3d(0, 0, 0);}
-.etc .app .slick-dots{position:static;overflow:hidden;display:inline-block;vertical-align:top;height:auto;line-height:0;margin:20px auto 0;}
-.etc .app .slick-dots li{float:left;height:auto;margin:0 2px;}
-.etc .app .slick-dots li button{width:12px;height:12px;text-indent:-999em;font-size:0;background-color:#fff;border:4px solid #000;border-radius:50%;}
-.etc .app .slick-dots li.slick-active button{background-color:#000;border:3px solid #fff;}
-
-.etc .app .section_top .title{position:relative;height:100%;}
+.etc .app .section_top .title{position:relative;height:1000px;}
 .etc .app .section_top .title:after{content:"";position:absolute;bottom:20px;left:calc(50% - 12px);width:24px;height:24px;background:url("../images/rounzup/icon_next.png") 50% 50% / 24px auto no-repeat}
 .etc .app .section_top .title figure{overflow:hidden;display:flex;align-items:center;justify-content:center;width:100%;height:100%}
 .etc .app .section_top .title figure video{width:100%;object-fit:cover}
@@ -2253,21 +2246,25 @@ h3.excerpt em{color:#1729EC}
 
 .etc .app .section_2 article{padding:100px 0;}
 .etc .app .section_2 h3{font-size:40px;line-height:50px;padding-bottom:80px;}
-.etc .app .section_2 .wrap_slide{overflow:hidden;}
-.etc .app .section_2 .wrap_slide .slide_video .slick-slide{overflow:hidden;position:relative;width:260px;height:auto;background-color:#000;border-radius:30px;margin:0 20px;}
-.etc .app .section_2 .wrap_slide .slide_video .slick-slide:before{content:"";position:absolute;top:0;left:0;display:block;width:100%;height:100%;border:4px solid #fff;border-radius:30px;box-sizing:border-box;}
-.etc .app .section_2 .wrap_slide .slide_video .slick-slide video{display:block;width:100%;border-radius:30px;}
+.etc .app .section_2 .wrap_video{display:flex;justify-content:space-between;align-items:flex-start;flex-direction:row;text-align:left;width:860px;margin:0 auto;}
+.etc .app .section_2 .wrap_video li{overflow:hidden;width:260px;line-height:0;border-radius:30px;margin-right:40px;}
+.etc .app .section_2 .wrap_video li:last-child{margin-right:0;}
+.etc .app .section_2 .wrap_video li video{width:100%;}
+
 
 .etc .app .section_2_1{overflow:hidden}
-.etc .app .section_2_1 article{position:relative;overflow:hidden;max-width:1920px;width:100%;height:944px;margin:0 auto;}
-.etc .app .section_2_1 article .action_element{position:relative;display:flex;justify-content:center;align-items:center;height:100%;}
-.etc .app .section_2_1 article .action_element figure{position:absolute;width:260px;height:auto;opacity:0.6;}
+.etc .app .section_2_1 article{position:relative;overflow:hidden;max-width:1920px;width:100%;height:100%;margin:0 auto;}
+.etc .app .section_2_1 article .action_element{position:relative;display:flex;justify-content:center;align-items:center;height:100vh;}
+.etc .app .section_2_1 article .action_element figure{position:absolute;width:220px;height:auto;opacity:0.4;}
+
+.etc .app .section_2_1 .vertical_wrap{position:relative;width:1910px;height:944px;}
+
 .etc .app .section_2_1 article figure.el_1{top:100px;left:0}
-.etc .app .section_2_1 article figure.el_2{top:-163px;left:700px;}
+.etc .app .section_2_1 article figure.el_2{top:-200px;left:729px;}
 .etc .app .section_2_1 article figure.el_3{top:200px;right:100px;}
 .etc .app .section_2_1 article figure.el_4{bottom:-88px;left:451px;}
 .etc .app .section_2_1 article figure.el_5{bottom:-100px;right:528px;}
-.etc .app .section_2_1 article h2{display:flex;;opacity:0;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:0;width:100%;height:100%;font-size:64px;line-height:1.4;font-weight:normal;text-align:center;background:rgba(0,0,0,.4);}
+.etc .app .section_2_1 article h2{display:flex;;opacity:0;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:0;width:100%;height:100%;font-size:64px;line-height:1.4;text-align:center;}
 
 .etc .app .section_3 article{padding:100px 0 140px;}
 .etc .app .section_3 h2{font-size:40px;line-height:56px;color:#fff;padding-bottom:60px;}
