@@ -108,7 +108,7 @@
 			</ul>
 		</article>
 		<section class="app">
-			<div class="wrap_app">
+			<div class="app_inner">
 				<section class="section_top">
 					<article class="title" data-animation="false">
 						<figure><video src="./images/rounzup/video_main_top.mp4" autoplay muted loop playsinline></video></figure>
@@ -795,6 +795,28 @@
 <script>
 $(function() {
 
+	//slideup animation
+	function scrollSection() {
+		var $article = $("article").not(".section_top .title").attr("data-animation", "false");
+		$article.attr("data-animation", "false");
+		$(".section_top .title").attr("data-animation", "true");
+		$(window).scroll(function() {
+			$article.each(function() {
+				if ($(window).scrollTop() > $(this).offset().top - ($(window).height() - 100)) {
+					$(this).attr("data-animation", "true");
+				}
+			});
+		})
+	} 
+	scrollSection();
+
+    function setScreenSize() {
+		let vh = window.innerHeight * .01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	}
+	setScreenSize();
+	window.addEventListener('resize', () => setScreenSize());
+
 	$(".section_2 .slide_video").slick({
 		arrows: false,
 		dots: true,
@@ -1116,7 +1138,7 @@ $(function() {
 		duration: 1320
 	})
 	.addTo(controller)
-	.addIndicators({"name": "section_2"})
+	// .addIndicators({"name": "section_2"})
 	.setPin(".section_2");
 
 	let section_2_h2 = new ScrollMagic.Scene({
@@ -1124,41 +1146,12 @@ $(function() {
 		offset: 1000,
 		duration: 500
 	}).addTo(controller)
-	.addIndicators({"name": "section_2_h2"})
+	// .addIndicators({"name": "section_2_h2"})
 	.setTween(".section_2 .setpin_h2", {
 		background: "rgba(0,0,0,.85)",
 		top: 0,
 		opacity: 1
 	});
 
-
-	//slideup animation
-	function scrollSection() {
-		var $article = $("article").not(".section_top .title").attr("data-animation", "false");
-		$article.attr("data-animation", "false");
-		$(".section_top .title").attr("data-animation", "true");
-		$(window).scroll(function() {
-			$article.each(function() {
-				if ($(window).scrollTop() > $(this).offset().top - ($(window).height() - 100)) {
-					$(this).attr("data-animation", "true");
-				}
-			});
-		})
-	} 
-	scrollSection();
-
-    function setScreenSize() {
-		let vh = window.innerHeight * .01;
-		document.documentElement.style.setProperty('--vh', `${vh}px`);
-	}
-	setScreenSize();
-	window.addEventListener('resize', () => setScreenSize());
-
-	if(navigator.userAgent.match(/inapp|Instagram/i)){ 
-		if(navigator.userAgent.match(/iPhone|iPad/i)){ 
-			// $(".section_3 .top").addClass("insta_inapp");
-			// $(".section_3 .top .vf_1").focus();
-		} 
-	}
 });
 </script>

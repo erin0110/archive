@@ -2221,19 +2221,20 @@ a.btn_vf.fixed{z-index:50;position:fixed;top:auto;bottom:90px}
 /*app reset*/
 .etc .app,.etc .app section{padding:0;}
 .etc .app{text-align:center;color:#fff;background:#000;font-size:14px;line-height:1.6;}
+.etc .app .app_inner{max-width:640px;margin:0 auto;}
 .etc .app figure,.etc .app figcaption{font-size:0;line-height:0;padding:0;margin:0;}
 .etc .app a{text-decoration:none;color:#fff;}
 .etc .app h2{padding:0;border:0;}
 /* scroll animation */
-.etc .app article[data-animation="false"] .action{opacity:0;transform:translateY(50px)}
-.etc .app article[data-animation="true"] .action{opacity:1;transform:translateY(0);transition:transform .5s ease-out,opacity 1s}
-.etc .app article[data-animation="true"] .action.a_2{transition-delay:.3s}
-.etc .app article[data-animation="true"] .action.a_3{transition-delay:.6s}
-.etc .app article[data-animation="true"] .action.a_4{transition-delay:.8s}
-.etc .app article[data-animation="true"] .action.a_5{transition-delay:1.0s}
-.etc .app article[data-animation="true"] .action.a_6{transition-delay:1.2s}
-.etc .app article[data-animation="true"] .action.a_7{transition-delay:1.4s}
-.etc .app article[data-animation="true"] .action.a_8{transition-delay:1.6s}
+.etc .app [data-animation="false"] .action{opacity:0;transform:translateY(50px)}
+.etc .app [data-animation="true"] .action{opacity:1;transform:translateY(0);transition:transform .5s ease-out,opacity 1s}
+.etc .app [data-animation="true"] .action.a_2{transition-delay:.3s}
+.etc .app [data-animation="true"] .action.a_3{transition-delay:.6s}
+.etc .app [data-animation="true"] .action.a_4{transition-delay:.8s}
+.etc .app [data-animation="true"] .action.a_5{transition-delay:1.0s}
+.etc .app [data-animation="true"] .action.a_6{transition-delay:1.2s}
+.etc .app [data-animation="true"] .action.a_7{transition-delay:1.4s}
+.etc .app [data-animation="true"] .action.a_8{transition-delay:1.6s}
 
 .etc .app .slick-slide{outline:none;-webkit-transform: translate3d(0,0,0);transform: translate3d(0, 0, 0); }
 .etc .app .slick-dots{overflow:hidden;position:static;display:inline-block;vertical-align:top;height:auto;line-height:0;margin:20px auto 0;}
@@ -2367,14 +2368,12 @@ a.btn_vf.fixed{z-index:50;position:fixed;top:auto;bottom:90px}
 	.etc .app .section_top .sequence_intro .rounz_up{width:auto;height:100%}
 }
 @media (min-width:1025px) {
-	.etc .wrap_app{position:relative;width:640px;max-width:640px;height:auto;margin:0 auto;-ms-overflow-style:none}
+	.etc .app_inner{width:640px;height:auto;-ms-overflow-style:none}
 	.etc .app .section_top .title figure,
 	.etc .app .section_top .title figcaption,
 	.etc .app .section_top .sequence_intro,
 	.etc .app .section_1 .top h2,
-	.etc .app .section_1 .up,
-	.etc .app .section_3 .top{width:100%;max-width:640px}
-	.etc .app .section_2 figure{height:auto}
+	.etc .app .section_1 .up{width:100%;max-width:640px;}
 }
 
 
