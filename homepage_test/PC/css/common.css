@@ -2177,7 +2177,7 @@ h3.excerpt em{color:#1729EC}
 .etc .app .section_top .title figure video{width:100%;object-fit:cover}
 .etc .app .section_top .title figcaption{display:flex;align-items:center;justify-content:center;flex-direction:column;position:absolute;top:0;left:0;width:100%;height:100%}
 .etc .app .section_top .title h2{width:395px;margin:0 auto 5px;}
-.etc .app .section_top .title p{width:395px;margin:0 auto;}
+.etc .app .section_top .title p{font-size:41px;line-height:1;margin:0 auto;}
 .etc .app .section_top .sequence_intro{overflow:hidden;width:100%;height:calc(100vh - 177px);font-size:0;text-align:center;background:#1729EC}
 .etc .app .section_top .sequence_intro .rounz_up{width:100%;height:100%;object-fit:cover}
 
