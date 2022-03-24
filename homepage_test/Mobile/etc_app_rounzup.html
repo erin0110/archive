@@ -836,110 +836,21 @@ $(function() {
         autoplay: true
 	});
 
-	// 공유하기 START
-	var shareUrl = 'https://m.rounz.com/rounzup#event';
-
-	(function (d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) { return; }
-		js = d.createElement(s); js.id = id;
-		js.src = "https://connect.facebook.net/en_US/sdk.js";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-	window.fbAsyncInit = function() {
-		FB.init({
-			appId            : '176007603007893',
-			autoLogAppEvents : true,
-			xfbml            : true,
-			version          : 'v3.2'
-		});
-	};
-	$('a.btn_facebook').click(function () {
-		FB.ui({
-			method: 'share',
-			href: shareUrl
-		});
-	});
-
-	Kakao.init('6d60e82c247be6a6d829f9666a0f6df4');
-	$('a.btn_kakao').click(function () {
-		Kakao.Link.sendDefault({
-			installTalk: true,
-			objectType: 'feed',
-			content: {
-				title: '라운즈 가상피팅 이벤트',
-				description: '써보면 모두 주는 안경/선글라스 #무제한증정 초특급 이벤트',
-				imageUrl: 'https://image.rounz.com/rounzup/kakao_share.png',
-				link: {
-					mobileWebUrl: shareUrl,
-					webUrl: shareUrl
-				}
-			}
-		});
-	});
-
-	$('a.btn_url').click(function () {
-		try {
-			navigator.share({
-				'title': document.title,
-				'url': shareUrl
-			});
-		} catch (e) {
-			try {
-				let textArea = document.createElement("textarea");
-				textArea.value = shareUrl;
-				textArea.style.position = "fixed";
-				textArea.style.left = "-999999px";
-				textArea.style.top = "-999999px";
-				document.body.appendChild(textArea);
-				textArea.focus();
-				textArea.select();
-				document.execCommand('copy');
-				try {
-					textArea.remove(); // IE error
-				} catch (e4) {}
-				alert('공유 URL 복사가 완료 되었습니다.');
-			} catch (e2) {
-				try {
-					navigator.clipboard.writeText(shareUrl);
-					alert('공유 URL 복사가 완료 되었습니다.');
-				} catch (e3) {
-					console.log(e3);
-					alert('죄송합니다. 사용중이신 브라우저는 클립보드 복사를 지원하지 않습니다.');
-				}
-			}
-		}
-	});
-
-	document.addEventListener('visibilitychange', function() {
-		if ('visible' === document.visibilityState) {
-			var els = document.getElementsByTagName('video'), i = 0, l = els.length;
-			for (; i < l; i++) {
-				els[i].play();
-			}
-		}
-	});
-	// 공유하기 END
-
 	let delayedYOffset = 0;
 	let rafId, rafState;
-
 	let controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 0}});
 	//시퀀스
 	let obj = {curImg: 0};
 	let scene_rounzUp = [];
-	
 	for (let i = 0; i < 42; i++) {
 		let img = new Image();
 		img.src = `./images/rounzup/sqc/up_mov_${i + 1}.jpg`;
 		scene_rounzUp.push(img);		
 	}
-
 	const canvas = document.querySelector(".rounz_up");
 	const context = canvas.getContext("2d");
 	const canvas_up_1 = document.querySelector(".canvas_up_1");
 	const context_up_1 = canvas_up_1.getContext("2d");
-	
 	let scene_tween = TweenMax.to(obj, .5, {
 		curImg: scene_rounzUp.length - 1,
 		roundProps: "curImg",
@@ -984,13 +895,11 @@ $(function() {
 
 	let obj_1 = {curImg: 0};
 	let scene_rounzUp_1 = [];
-
 	for (let i = 0; i < 150; i++) {
 		let img = new Image();
 		img.src = `./images/rounzup/sqc/up_1_mov_${i + 1}.jpg`;
 		scene_rounzUp_1.push(img);
 	}
-	
 	let up_tween = TweenMax.to(obj_1, .5, {
 		curImg: scene_rounzUp_1.length - 1,
 		roundProps: "curImg",
@@ -1033,7 +942,6 @@ $(function() {
 	.addTo(controller)
 	// .addIndicators({"name": "sequence_up_sqc"})
 
-	//section_1 top
 	let section_1 = new ScrollMagic.Scene({
 		triggerElement: ".section_1",
 		offset: 216,
@@ -1151,7 +1059,6 @@ $(function() {
 		opacity: 0
 	});
 
-	//up_2
 	let setpin_up_2 = new ScrollMagic.Scene({
 		triggerElement: ".up_2",
 		offset: -56,
@@ -1172,7 +1079,6 @@ $(function() {
 	.addTo(controller)
 	// .addIndicators({"name": "blind_up_2_1"})
 
-	//up_3
 	let setpin_up_3 = new ScrollMagic.Scene({
 		triggerElement: ".up_3",
 		offset: -56,
@@ -1194,7 +1100,6 @@ $(function() {
 	.addTo(controller)
 	// .addIndicators({"name": "blind_up_3_1"})
 
-	//up_4
 	let setpin_up_4 = new ScrollMagic.Scene({
 		triggerElement: ".up_4",
 		offset: -56,
@@ -1215,7 +1120,7 @@ $(function() {
 	.addTo(controller)
 	// .addIndicators({"name": "blind_up_4_1"})
 	.on("start", function reset_video() {
-      	$("#up_4_video")[0].currentTime = 0;
+		$("#up_4_video")[0].currentTime = 0;
 	});
 
 	let section_2 = new ScrollMagic.Scene({
