@@ -975,6 +975,10 @@ $(function() {
 			$(".delivery_store").show();
 		}
 	});
+	$(".form_write dd.store div").click(function() {
+		$(".form_write dd.store div").removeClass("on");
+		$(this).addClass("on");
+	});
 
 	$(".form_write p.delivery").find("input[type='radio']").click(function() {
 	  var v = $(this).val();
