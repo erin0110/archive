@@ -41,13 +41,13 @@ select{width:100%;height:48px;background:#fff url("../images/icon_drop_open.png"
 		url("../font/Montserrat-Bold.woff2") format("woff2"),
 		url("../font/Montserrat-Bold.woff") format("woff");
 }
-@font-face{
+@font-face{ 
 	font-family:"Noto Sans KR";font-style:normal;font-weight:normal;
 	src:local(☺),
 		url("../font/NotoSansKR-Regular.woff2") format("woff2"),
 		url("../font/NotoSansKR-Regular.woff") format("woff");
 }
-@font-face{
+@font-face{ 
 	font-family:"Noto Sans KR";font-style:normal;font-weight:bold;
 	src:local(☺),
 		url("../font/NotoSansKR-Bold.woff2") format("woff2"),
@@ -466,7 +466,6 @@ h3.excerpt em{color:#1729EC}
 .form_write .delivery_store .find_store .coupon_radius strong i{display:block;font-size:11px;font-weight:normal;color:rgba(255,255,255,.5);padding-top:16px}
 .form_write .delivery_store .find_store .coupon_radius em{position:absolute;top: 16px;right: 45px;display:flex;flex-direction:column;justify-content:center;height: calc(100% - 30px);font-size: 12px;line-height:1.5;font-weight: 400;color: #fff !important;padding-left: 34px;border-left:1px solid rgba(255,255,255,.2)}
 .form_write .delivery_store .find_store .coupon_radius em:before{content:"";display:block;width:24px;height:24px;background:url("../images/blt_coupon_down.png") 50% 50% / 24px auto no-repeat;margin: 0 auto 6px}
-.form_write .delivery_store.lense dl dt{font-weight:bold;}
 
 
 .form_write .delivery_store .find_store .store_list li{position:relative;border:1px solid #D6DAE5;margin-top:10px;padding:12px 0 12px 48px}
@@ -627,7 +626,6 @@ h3.excerpt em{color:#1729EC}
 .select_option.multi li a{height:100px;padding:10px;padding-left:100px}
 .select_option.multi li h4{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;font-size:12px;padding-top:5px}
 .select_option.multi li img{position:absolute;left:10px;width:80px}
-
 .select_option.addition div{margin-bottom:10px}
 .select_option.addition li a{height:49px;padding-left:10px}
 .select_option.addition li strong{position:absolute;top:0;right:8px}
@@ -886,7 +884,6 @@ h3.excerpt em{color:#1729EC}
 .basket_order td{position:relative;border-bottom:1px solid #EBEDF3;padding:10px 0}
 .basket_order td label:before{margin-top:0}
 .basket_order td input[type="checkbox"]:disabled + label:before{opacity:0.6}
-.basket_order td .selectbox{width:108px;height:36px;}
 .basket_order td.title{font-size:0;padding:20px 0}
 .basket_order td.title p{display:inline-block;position:relative;line-height:0;height:100px;margin-right:10px}
 .basket_order td.title p.booked:after{content:"예약접수";position:absolute;bottom:0;left:0;right:0;display:block;width:60px;height:24px;line-height:23px;text-align:center;font-size:12px;color:#fff;background:#1729EC;border-radius:0;margin:0 auto}
@@ -897,6 +894,7 @@ h3.excerpt em{color:#1729EC}
 .basket_order td.title div i{display:block;overflow:hidden;color:#535762;line-height:18px;font-size:14px;max-width:250px;max-height:36px;margin-top:7px}
 .basket_order td.title div .notice_disable{display:block;font-size:12px;line-height:16px;font-weight:bold;white-space:nowrap;color:#FE4343;padding-top:13px}
 .basket_order td.title .option{display:inline-block;background:url("../images/icon_gnb_drop.png") 100% 4px no-repeat;font-size:12px;color:#A9AFBE;padding-right:16px;margin-top:13px}
+.basket_order td.title select{display:inline-block;width:auto;height:auto;background:url("../images/icon_gnb_drop.png") 100% 4px no-repeat;font-size:12px;color:#000;border:0;padding:2px 16px 2px 0;margin-top:7px}
 .basket_order td.etc{text-align:right}
 .basket_order td.etc a{display:inline-block;width:36px;height:36px;background:50% 50% / 24px 24px no-repeat;border:1px solid #D6DAE5;border-radius:0;margin-left:3px}
 .basket_order td.etc .like{background-image:url("../images/btn_like.png")}
@@ -911,6 +909,9 @@ h3.excerpt em{color:#1729EC}
 .basket_order td .q.disable{color:#CBCFD8;background:#F3F4F7;border: 1px solid #E6E9EF}
 .basket_order td .q.disable a{background:url("../images/btn_minus_disable.png") 50% 50% / 24px auto no-repeat}
 .basket_order td .q.disable a.add{background-image:url("../images/btn_plus_disable.png")}
+.basket_order td .del{position:relative;display:block;width:17px;height:17px;background:url("../images/btn_close_layer.png") 0 0 / 100% auto no-repeat}
+.basket_order .btn_add{display:block;width:100%;height:48px;line-height:46px;text-align:center;font-size:16px;color:#000;border:1px solid #D6DAE5;margin-top:20px}
+
 .basket_order tfoot td{background:#F7F7F7;color:#535762;font-size:16px;text-align:center;padding:30px 0}
 .basket_order tfoot td strong{display:block;font-size:20px}
 .basket_order tfoot td i{position:relative;display:inline-block;width:24.7%;line-height:1.5}
@@ -948,7 +949,7 @@ h3.excerpt em{color:#1729EC}
 .basket_order .right .agree_box label{position:relative;display:block;font-weight:normal;line-height:22px;padding-left:32px;margin-bottom:0}
 .basket_order .right .agree_box label:before{position:absolute;top:0;left:0;margin-top:0}
 .basket_order .right .agree_box p{margin-bottom:16px}
-.basket_order .right .info_red{text-align:center;font-size:14px;line-height:1.4;color:#FF3300;padding:6px 0 10px;}
+.basket_order .right .info_red{text-align:center;font-size:14px;line-height:1.4;color:#FF3300;padding:6px 0 10px}
 
 .basket_order .right .btn_bottom{padding-top:0}
 .basket_order .right .btn_bottom a{width:100%;margin-top:10px}

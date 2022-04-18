@@ -653,6 +653,7 @@ a.btn_vf.fixed{z-index:50;position:fixed;top:auto;bottom:90px}
 .basket_order h3{font-size:16px;padding-bottom:8px}
 .basket_order .desc_review{font-size:11px;line-height:16px;color:#535762;margin-bottom:20px}
 .basket_order li{position:relative;padding-bottom:32px}
+.basket_order.lense li:last-child{padding-bottom:0}
 .basket_order li dl{overflow:hidden}
 .basket_order li dt{clear:left;float:left;color:rgba(0,0,0,.5);width:120px;padding-bottom:10px}
 .basket_order li dt label:before{position:absolute;top:0;margin-top:0}
@@ -679,13 +680,16 @@ a.btn_vf.fixed{z-index:50;position:fixed;top:auto;bottom:90px}
 .basket_order li dd.bottom .like{display:inline-block;width:48px;height:48px;border-radius:0;border:1px solid #D6DAE5;background:url("../images/btn_like.png") 50% 50% / 24px auto no-repeat}
 .basket_order li dd.bottom .like.on{background-image:url("../images/btn_like_on.png")}
 .basket_order li dd.bottom .option{position:absolute;right:0;display:inline-block;width:100px;height:48px;border-radius:0;border:1px solid #D6DAE5;text-align:center;font-size:16px;padding:16px 0}
-
-.basket_order li .select_wrap select{width:100%;height:48px;border:1px solid #D6DAE5;padding:10px 10px 9px;margin-bottom:4px;}
-.basket_order li .select_wrap .q{display:block;border:1px solid #D6DAE5;height:48px;line-height:44px;border-radius:0;text-align:center;}
-.basket_order li .select_wrap .q a{display:inline-block;width:46px;height:46px;background:url("../images/btn_minus.png") 50% 50% / 24px auto no-repeat}
-.basket_order li .select_wrap .q a.add{background-image:url("../images/btn_plus.png")}
-.basket_order li .select_wrap .num{display:inline-block;width:calc(100% - 92px);height:46px;line-height:46px;border-left:1px solid #D6DAE5;border-right:1px solid #D6DAE5;font-weight:bold;text-align:center;vertical-align:top}
-
+.basket_order li dd .q{display:block;border:1px solid #D6DAE5;height:48px;line-height:44px;border-radius:0;text-align:center}
+.basket_order li dd .q a{display:inline-block;width:46px;height:46px;background:url("../images/btn_minus.png") 50% 50% / 24px auto no-repeat}
+.basket_order li dd .q a.add{background-image:url("../images/btn_plus.png")}
+.basket_order li dd .num{display:inline-block;width:calc(100% - 92px);height:46px;line-height:46px;border-left:1px solid #D6DAE5;border-right:1px solid #D6DAE5;text-align:center;vertical-align:top}
+.basket_order li dd .q.disable{color:#CBCFD8;background:#F3F4F7;border:1px solid #E6E9EF}
+.basket_order li dd .q.disable a{background:url("../images/btn_minus_disable.png") 50% 50% / 24px auto no-repeat}
+.basket_order li dd .q.disable a.add{background-image:url("../images/btn_plus_disable.png")}
+.basket_order li dd select{width:100%;height:48px;border:1px solid #D6DAE5;padding:10px 10px 9px}
+.basket_order li dd .q + select{margin-top:10px}
+.basket_order .btn_add{display:block;height:48px;line-height:48px;text-align:center;color:#000;background:#fff;border:1px solid #D4D7DE;margin-top:16px}
 
 .partner{clear:left;padding:16px}
 .partner .banner{width:100%;height:107px;background:#535662 url("../images/bg_partner_reservation.jpg")100% 50% / cover no-repeat;padding:14px 20px;margin-bottom:20px}
@@ -709,13 +713,7 @@ a.btn_vf.fixed{z-index:50;position:fixed;top:auto;bottom:90px}
 
 /* 임시 */
 .basket_order li dd.bottom select{clear:left;width:100%;height:48px;border:1px solid #D6DAE5;padding:10px 10px 9px}
-.basket_order li dd.bottom .q{position:absolute;top:0;right:0;display:block;width:50%;border:1px solid #D6DAE5;height:48px;line-height:44px;border-radius:0;text-align:center}
-.basket_order li dd.bottom .q a{display:inline-block;width:46px;height:46px;background:url("../images/btn_minus.png") 50% 50% / 24px auto no-repeat}
-.basket_order li dd.bottom .q a.add{background-image:url("../images/btn_plus.png")}
-.basket_order li dd.bottom .num{display:inline-block;width:calc(100% - 92px);height:46px;line-height:46px;border-left:1px solid #D6DAE5;border-right:1px solid #D6DAE5;font-weight:bold;text-align:center;vertical-align:top}
-.basket_order li dd.bottom .q.disable{color:#CBCFD8;background:#F3F4F7;border:1px solid #E6E9EF}
-.basket_order li dd.bottom .q.disable a{background:url("../images/btn_minus_disable.png") 50% 50% / 24px auto no-repeat}
-.basket_order li dd.bottom .q.disable a.add{background-image:url("../images/btn_plus_disable.png")}
+.basket_order li dd.bottom .q{position:absolute;top:0;right:0;width:50%}
 
 .detail_bottom dd.box em{display:block;border:1px solid #D6DAE5;height:48px;line-height:44px;border-radius:0;text-align:center;margin:10px 0}
 .detail_bottom dd.box em a{display:inline-block;width:46px;height:46px;background:url("../images/btn_minus.png") 50% 50% / 24px auto no-repeat}
@@ -781,10 +779,10 @@ a.btn_vf.fixed{z-index:50;position:fixed;top:auto;bottom:90px}
 .form_write p.desc_box{color:#A9AFBE;background:rgba(178,209,234,.2);padding:10px 20px;margin-top:16px}
 .form_write .delivery_home h3{padding:40px 0 16px}
 .form_write .delivery_home .choice{margin-bottom:16px}
-.form_write .delivery_store.lense h3{padding:0 0 16px}
-.form_write .delivery_store.lense dl dt{font-size:14px;font-weight:bold;color:#1729EC;margin:20px 0 16px}
 .form_write .delivery_store h3{padding:40px 0 16px}
 .form_write .delivery_store h3 span{display:block;font-size:14px;font-weight:normal;padding-top:8px}
+.basket_order.lense + .form_write .delivery_store h3{padding-top:16px}
+.basket_order.lense + .form_write .delivery_store dl dt{font-size:14px;font-weight:bold;color:#1729EC;margin:20px 0 16px}
 
 .form_write .delivery_store .info_receive{font-size:12px;margin:18px 0 10px}
 .form_write .delivery_store .info_receive em{color:#A9ABB1}
@@ -883,7 +881,7 @@ a.btn_vf.fixed{z-index:50;position:fixed;top:auto;bottom:90px}
 .basket_order_pay .agree_box label{position:relative;display:block;font-weight:normal;padding-left:32px}
 .basket_order_pay .agree_box label:before{position:absolute;top:0;left:0;margin-top:0}
 .basket_order_pay .agree_box p+p{margin-top:16px}
-.basket_order_pay .info_red{text-align:center;line-height:20px;color:#FF3300;padding-top:40px;}
+.basket_order_pay .info_red{text-align:center;line-height:20px;color:#FF3300;padding-top:40px}
 
 .basket_order_complete{padding:0}
 .basket_order_complete h2{height:180px;background:#1729EC;font-weight:normal;font-size:24px;color:#fff;text-align:center;line-height:36px;padding:68px 16px 48px}

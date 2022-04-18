@@ -361,23 +361,25 @@
     			<li>03 주문완료</li>
     		</ul>
     	</article>
-    	<section class="basket_order">
+    	<section class="basket_order lense">
             <article class="left">
                 <h4>주문 상품</h4>
                 <table>
                     <caption class="blind">주문중인 상품</caption>
                     <colgroup>
                         <col />
-                        <col style="width:160px" />
-                        <col style="width:160px" />
-                        <col style="width:90px" />
+                        <col style="width:150px" />
+                        <col style="width:120px" />
+                        <col style="width:120px" />
+                        <col style="width:40px" />
                     </colgroup>
                     <thead>
                     <tr>
                         <th scope="col">상품명/옵션명</th>
-                        <th scope="col">옵션</th>
                         <th scope="col">수량</th>
+                        <th scope="col">가격</th>
                         <th scope="col">총 금액</th>
+                        <th scope="col"></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -387,25 +389,94 @@
                                 <p><img src="https://image.rounz.com/_data/product/LENS/CLALEN/SOUL-BROWN-1-DAY-(40p)/SOUL-BROWN-1-DAY-(40p)_02.jpg" alt="" /></p>
                                 <div>
                                     <span>[클라렌 O2O2] A-TYPE BROWN LENS</span>
+                                    <select>
+                                        <option>도수선택</option>
+                                        <option>0.00</option>
+                                        <option>-0.50</option>
+                                        <option>-1.00</option>
+                                        <option>-1.25</option>
+                                        <option>-1.50</option>
+                                        <option>-1.75</option>
+                                        <option>-2.00</option>
+                                        <option>-2.25</option>
+                                        <option>-2.50</option>
+                                        <option>-2.75</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                        <option>-5.50</option>
+                                        <option>-6.00</option>
+                                        <option>-6.50</option>
+                                        <option>-7.00</option>
+                                        <option>-7.50</option>
+                                        <option>-8.00</option>
+                                    </select>
                                 </div>
                             </a>
-                        </td>
-                        <td>
-                            <select class="selectbox">
-                                <option>1.25</option>
-                                <option>1.75</option>
-                                <option>2.25</option>
-                            </select>
                         </td>
                          <td>
                             <div class="q"><a href="#n"><span class="blind">수량 제거</span></a><span class="num">1</span><a href="#n" class="add"><span class="blind">수량 추가</span></a></div>
                         </td>
-                        <td><strong>53,000원</strong></td>
+                        <td>9,999,999원</td>
+                        <td><strong>9,999,999원</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="title">
+                            <a href="#n">
+                                <p><img src="https://image.rounz.com/_data/product/LENS/CLALEN/SOUL-BROWN-1-DAY-(40p)/SOUL-BROWN-1-DAY-(40p)_02.jpg" alt="" /></p>
+                                <div>
+                                    <span>[클라렌 O2O2]<br />A-TYPE BROWN LENS</span>
+                                    <select>
+                                        <option>도수선택</option>
+                                        <option>0.00</option>
+                                        <option>-0.50</option>
+                                        <option>-1.00</option>
+                                        <option>-1.25</option>
+                                        <option>-1.50</option>
+                                        <option>-1.75</option>
+                                        <option>-2.00</option>
+                                        <option>-2.25</option>
+                                        <option>-2.50</option>
+                                        <option>-2.75</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                        <option>-5.50</option>
+                                        <option>-6.00</option>
+                                        <option>-6.50</option>
+                                        <option>-7.00</option>
+                                        <option>-7.50</option>
+                                        <option>-8.00</option>
+                                    </select>
+                                </div>
+                            </a>
+                        </td>
+                         <td>
+                            <div class="q"><a href="#n"><span class="blind">수량 제거</span></a><span class="num">1</span><a href="#n" class="add"><span class="blind">수량 추가</span></a></div>
+                        </td>
+                        <td>9,999,999원</td>
+                        <td><strong>9,999,999원</strong></td>
+                        <td><a href="#n" class="del"><span class="blind">제거</span></a></td>
                     </tr>
                     </tbody>
                 </table>
+                <a href="#n" class="btn_add">상품추가</a>
+
                 <div class="form_write">
-                    <article class="delivery_store lense">
+                    <article class="delivery_store">
                         <h4 class="space">전달받을 안경원을 선택해주세요<span>전국 383개의 파트너 안경원에서 찾아보세요!</span></h4>
                         <div class="find_store">
                             <div class="search">
@@ -436,7 +507,7 @@
                                 </li>
                             </ul>
                             <dl>
-                                <dt>라운즈 플래그십 매장에서도 받아볼 수 있어요!</dt>
+                                <dt><strong>라운즈 플래그십 매장에서도 받아볼 수 있어요!</strong></dt>
                                 <dd class="store">
                                     <div class="on">
                                         <input type="radio" name="pickup_store_index" id="store_g" value="1" checked="checked"/>
@@ -833,7 +904,7 @@
             } else {
                 $(".basket_order .right").removeClass("fixed");
             }
-            if($(".delivery_store").hasClass("lense")) {
+            if($(".basket_order").hasClass("lense")) {
                 if (scrollTop > $(".basket_order_pay").offset().top - 500) $(".basket_order .right").addClass("fixed_off short");
                 else $(".basket_order .right").removeClass("fixed_off short");
             }
