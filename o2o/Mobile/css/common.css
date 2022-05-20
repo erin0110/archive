@@ -815,7 +815,7 @@ a.btn_vf.fixed{z-index:50;position:fixed;top:auto;bottom:90px}
 .form_write .delivery_store .find_store .search select{width:calc(50% - 2px)}
 .form_write .delivery_store .find_store .search select:nth-child(n+2){margin-left:4px}
 .form_write .delivery_store .find_store .store_list{display:block;margin-top:10px}
-.form_write .delivery_store .find_store .store_list.overflow{overflow-y:auto;max-height:390px}
+.form_write .delivery_store .find_store .store_list.overflow{overflow-y:auto;max-height:485px}
 .form_write .delivery_store .find_store .store_list li{position:relative;border:1px solid #D6DAE5;padding:20px 12px 20px 48px}
 .form_write .delivery_store .find_store .store_list li input[type="radio"]{width:1px;height:1px}
 .form_write .delivery_store .find_store .store_list li input[type="radio"] + label:before{position:absolute;top:20px;left:12px;margin:0}
