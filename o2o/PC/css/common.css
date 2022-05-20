@@ -541,6 +541,7 @@ h3.excerpt em{color:#1729EC}
 .template .btn em.review,.detail_top aside.btn a.review{background-image:url("../images/btn_review.png")}
 .template .btn em.cart{background-image:url("../images/btn_viewed_cart.png")}
 .template .btn em.stock{float:right;color:#A9AFBE;font-size:11px;background:none;padding-left:0;margin-right:0}
+.template .list dl.v2{height:auto;}
 .template .list dl.v2 dt{white-space:nowrap}
 .template .list dl.v2 .title{height:auto;overflow:hidden;text-overflow:ellipsis;word-wrap:break-word;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.2em;height:2.4em}
 .template .list dl.v2 .rate{font-size:11px;line-height:1.4;padding-top:10px;color:#535762}
